@@ -64,7 +64,7 @@ export default {
       if (dataSkill.selectedId) {
         const updateSkill = skills.map(item => {
           if (item.id === dataSkill.selectedId) {
-            return { ...item, ...dataSkill.selectedSkill, level: dataSkill.selectedLevel }
+            return { ...dataSkill.selectedSkill, level: dataSkill.selectedLevel, id: item.id }
           }
           return item
         })
